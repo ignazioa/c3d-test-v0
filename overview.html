@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0033)https://www.c3d.org/overview.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><!-- InstanceBegin template="/templates/andreas07.dwt" codeOutsideHTMLIsLocked="false" --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.c3d.org/apple-touch-icon.png?v=jw6lBYGJ3y">
+<link rel="icon" type="image/png" href="https://www.c3d.org/favicon-32x32.png?v=jw6lBYGJ3y" sizes="32x32">
+<link rel="icon" type="image/png" href="https://www.c3d.org/favicon-16x16.png?v=jw6lBYGJ3y" sizes="16x16">
+<link rel="manifest" href="https://www.c3d.org/manifest.json?v=jw6lBYGJ3y">
+<link rel="mask-icon" href="https://www.c3d.org/safari-pinned-tab.svg?v=jw6lBYGJ3y" color="#5bbad5">
+<link rel="shortcut icon" href="https://www.c3d.org/favicon.ico?v=jw6lBYGJ3y">
+<meta name="theme-color" content="#ffffff">
+<!-- InstanceBeginEditable name="doctitle" -->
+	<meta name="description" content="The C3D file format specification">
+	<meta name="keywords" content="C3D, motion capture, biomechanics, mo cap, mo-cap, gaitlab, motion lab, motionlab">
+<title>C3D file format and documentation</title>
+<!-- InstanceEndEditable -->
+<meta name="Motion Lab Systems" content="c3d.org">
+<link rel="stylesheet" href="./C3D file format and documentation_files/search.css" type="text/css" media="Screen">
+<link rel="stylesheet" type="text/css" href="./C3D file format and documentation_files/default.css" title="andreas07" media="Screen">
+<link rel="shortcut icon" ="favicon.ico"="">
+</head>
+<body>
+<div id="wrap">
+  <div id="leftside">
+    <h1>C3D.ORG</h1>
+    <h2>The biomechanics standard</h2>
+    <!-- InstanceBeginEditable name="menu" -->
+    <div id="menu"> 
+		<a href="https://ignazioa.github.io/c3d-test-v0/index.html">Home</a> 
+		<a href="https://ignazioa.github.io/c3d-test-v0/introduction.html">Introduction</a>
+		<a class="active" href="https://ignazioa.github.io/c3d-test-v0/overview.html">Overview</a>
+		<a href="https://www.c3d.org/HTML/default.htm" target="_blank">C3D online help</a> 
+		<a href="https://ignazioa.github.io/c3d-test-v0/c3dapps.html">Applications</a> 
+		<a href="https://www.c3d.org/c3ddocs.html">Documentation</a>
+		<a href="hhttps://ignazioa.github.io/c3d-test-v0/sampledata.html">Sample C3D files</a>
+		<a href="https://ignazioa.github.io/c3d-test-v0/about.html">About C3D.ORG</a>	</div>
+    <!-- InstanceEndEditable -->
+    <h3>Updated:</h3>
+    <p> <a href="https://www.c3d.org/updates.html">
+      <!-- #BeginDate format:Sw1 -->7 May, 2018<!-- #EndDate -->
+      </a></p>
+    <p><strong>The  C3D web site is maintained by <a href="http://www.motion-labs.com/" target="_blank">Motion Lab Systems</a> as a resource for the biomechanics community.</strong></p>
+    <p align="left">All of the C3D information on this web site is in the public domain and may be copied and freely distributed with other products. The C3D User Manual  documenting the C3D  format and structure may be copied and supplied with any product that supports C3D.</p>
+    <p align="left"><strong>This web site does not use cookies or collect or store any data from visitors.</strong></p>
+    <p>Original XHTML 1.0 Strict and CSS2 template by <a href="http://andreasviklund.com/" target="_blank">Andreas Viklund</a></p>
+  </div>
+  <div id="extras">
+    <!--Zoom Search Engine-->
+    <form action="https://www.c3d.org/search/search.php" method="get" id="headerzoom_searchform">
+      <div id="headersearch">
+        <div id="headersearchbutton">
+          <p align="center">Search the C3D web site
+            <input name="zoom_query" type="text" class="zoom_searchbox" id="headerzoom_searchbox" size="25" maxlength="25">
+          </p>
+        </div>
+      </div>
+    </form>
+    <h2> C3D Files supported</h2>
+    <ul>
+      <ul>
+        <li><a href="http://www.anybodytech.com/" target="_blank">AnyBody Technology</a></li>
+        <li><a href="http://www.ar-tracking.com/" target="_blank">ART</a></li>
+        <li><a href="http://www.biogesta.fr/" target="_blank">Biogesta</a></li>
+        <li><a href="http://code.google.com/p/b-tk/" target="_blank">Biomechanical ToolKit</a></li>
+        <li><a href="http://www.bkintechnologies.com/" target="_blank">BKIN Technologies</a></li>
+        <li><a href="http://www.btsbioengineering.com/" target="_blank">BTS Bioengineering </a></li>
+        <li><a href="http://www.c3dserver.com/" target="_blank">C3Dserver</a></li>
+        <li><a href="http://www.c-motion.com/" target="_blank">C-Motion</a></li>
+        <li><a href="http://www.codamotion.com/" target="_blank">Codamotion</a></li>
+        <li><a href="http://www.cometasystems.com/" target="_blank">Cometa Systems</a></li>
+        <li><a href="http://www.di-o-matic.com/" target="_blank">Di-O-Matic</a></li>
+        <li><a href="http://www.innsport.com/" target="_blank">Innovative Sports Training</a></li>
+        <li><a href="http://www.innovision-systems.com/" target="_blank">Innovision Systems</a></li>
+        <li><a href="http://www.kwon3d.com/" target="_blank">Kwon3D</a></li>
+        <li><a href="http://www.motionanalysis.com/" target="_blank">Motion Analysis Corp.</a></li>
+        <li><a href="https://www.motion-labs.com/" target="_blank">Motion Lab Systems</a></li>
+        <li><a href="http://www.nexgenergo.com/" target="_blank">NexGen Ergonomics</a></li>
+        <li><a href="http://www.noraxon.com/" target="_blank">Noraxon</a></li>
+        <li><a href="http://www.ndigital.com/" target="_blank">Northern Digital Inc.</a></li>
+        <li><a href="http://www.optitrack.com/" target="_blank">OptiTrack</a></li>
+        <li><a href="http://www.phasespace.com/" target="_blank">PhaseSpace</a></li>
+        <li><a href="http://www.ptiphoenix.com/" target="_blank">Phoenix Technologies</a></li>
+        <li><a href="http://www.polhemus.com/" target="_blank">Polhemus</a></li>
+        <li><a href="http://www.qualisys.com/" target="_blank">Qualisys</a></li>
+        <li><a href="http://www.motionshadow.com/" target="_blank">Shadow</a></li>
+        <li><a href="http://www.simi.com/" target="_blank">Simi</a></li>
+        <li><a href="http://www.vicon.com/" target="_blank">Vicon Motion Systems</a></li>
+        <li><a href="http://www.virtualsensei.it/" target="_blank">Virtual Sensei</a></li>
+        <li><a href="http://www.xcitex.com/" target="_blank">Xcitex</a></li>
+        <li><a href="http://www.xsens.com/" target="_blank">Xsens</a></li>
+        <li><a href="http://www.zflomotion.com/" target="_blank">Zflomotion</a></li>
+      </ul>
+    </ul>
+    <p align="left"><span class="style3">The websites listed above all offer products that support C3D files. Please <a href="mailto:info@c3d.org">contact us</a> if your</span> product supports the C3D format to request that your website  be added to this list. </p>
+  </div>
+  <!-- InstanceBeginEditable name="content" -->
+  <div id="content">
+    <h2>An overview of the C3D File Design</h2>
+    <p><b>C3D</b> (<b>C</b>oordinate <b>3D</b>) files are a subset of a more general (ADTech) file format designed by Andrew Dainis to hold data and their associated parameters within a single file. C3D files contrast with other formats typically used in biomechanical applications which have separate files for data and parameters, or where all parameters are included at the beginning of the file.</p>
+    <h4>Design Goals</h4>
+    <p>The ADTech file format was designed to provide a general and uniform file format for storing a variety of data and their parameters in an efficient manner. A primary goal was to provide the user with the ability to understand, examine, and if necessary modify the parameters.</p>
+    <p>The goals for the file format were as follows:</p>
+    <ul>
+      <li>Minimize storage requirements</li>
+      <li>Minimize the number of files required to store data and its associated parameters</li>
+      <li>Optimize for speed and efficiency of access</li>
+      <li>Provide a facility for incorporating parameter descriptions</li>
+      <li>Provide the facility for the casual user to display and modify all parameters</li>
+      <li>Provide flexibility to store different kinds of data and their associated parameters</li>
+      <li>There must be no limitations on the data length, or the type and number of parameters that can be stored</li>
+      <li>The file must be easily expandable to store additional parameters and data</li>
+      <li>The format must provide a means to retain full backwards compatibility, i.e., subsets of the file must work correctly even with the oldest programs</li>
+    </ul>
+    <h4>Binary vs. ASCII</h4>
+    <p>Both types of files have advantages and disadvantages. ASCII files can readily include descriptions associated with parameters, and are readily manipulated by the use of common text editors. However they are very inefficient for storage and access, and very large files may present problems to some editors. Also, ASCII files must generally be accessed sequentially and are very inefficient if the files must be read non-sequentially.</p>
+    <p>Binary files are efficient in data storage and access and may also contain parameters and associated descriptions, but not in a form casually accessible to the user. Also, the file organization is specific to the type of data stored, i.e., the data and any parameters may only be accessed by specifically written programs which have a detailed knowledge of the file structure.</p>
+    <h4 class="article-title">The ADTECH file format</h4>
+    <p>To best meet all of the above requirements it was decided that the format should incorporate the following:</p>
+    <ul>
+      <li>The files will be binary format.</li>
+      <li>Each file will have a "primary" parameter section where parameter information is stored according to a specified format.</li>
+      <li>Data and their parameters will be in the same file, with a specified scheme to tell programs where the "primary" parameter section is located.</li>
+      <li>Parameters may have the standard numerical types of byte, integer, float, and character.</li>
+      <li>Parameters may have "dimensions" to also allow the definition of vector and matrix quantities.</li>
+      <li>Parameters may have associated names and descriptions, and will be classified into groups for ease of use and access by the user.</li>
+      <li>The way the data are stored and their location(s) within the file may be flexibly specified through the parameters.</li>
+    </ul>
+    <p>Hence the basic ADTech file format, of which the C3D format is an example, has the following specifications:</p>
+    <ul>
+      <li>The first byte of the file contains the number of the 1st parameter record in the file (all records are considered to be 512 bytes long).</li>
+      <li>The 2nd byte is a key byte and must contain decimal 80.</li>
+      <li>The first 2 bytes of the first parameter record are the first two bytes of the file or are not used.</li>
+      <li>Byte 3 of the 1st parameter record contains the number of parameter records.</li>
+      <li>Byte 4 of the 1st parameter record codes the processor data type, i.e., 84 for PC (Intel), 85 for DEC, and 86 for Sun/MIPS systems.</li>
+      <li>The parameters are stored starting at byte 5 of the first parameter record according to the parameter format specification described in the documentation. The parameters are stored in random order providing for much flexibility at the expense of some programming complexity.</li>
+      <li>Each parameter has a data type, optional dimensions, a name, a description, and belongs to a group. Each group also has a name and a description</li>
+    </ul>
+    <h4 class="article-title">C3D files</h4>
+    <p>In a C3D file the first record is used as a header record, the parameters typically start at record 2 (although that is not required), and the data section contains 3D point and analog channel data in a specified format.</p>
+    <p>With the exception of the first 4 bytes, the header record contains information largely duplicated in the parameter section. Its purpose is to provide simple access to certain parameters describing the data when it was not desired to do the more complex programming to read the full parameter section. It was recognized that the duplication of parameters may present some hazards to the programmer and user.</p>
+    <p>Each point coordinate and analog data word is stored as a 16-bit integer or 32-bit float. The 4th coordinate word for each point contains the camera usage bits, and a measurement residual value. The data are stored sequentially by frames, and within a frame they are stored sequentially by point number, followed by the analog channel data.</p>
+    <h4>Additional comments</h4>
+    <p>The ADTech file format can be used for storing other kinds of data, its advantage being that the parameter section may be read and manipulated by any program such as PRM that knows the parameter format. In the AMASS system several other files using the ADTech format were implemented, mainly for storing parameters.</p>
+    <p>Since the introduction of C3D files in 1986, the format has proved to be very versatile and has become a standard for the storage and exchange of raw 3D and analog data. Its flexibility and expandability has allowed C3D files to "evolve" by accommodating additional parameters and types of data.</p>
+    <p>Other parameter sections may be added to a file, with parameters in the "primary" parameter section indicating where in the file the new parameter sections may be found. This is also true for additional data sections or blocks. Hence a C3D file may have additional data and parameter sections while still retaining full backward compatibility. The only real requirement of a basic C3D file is that it have an appropriate "primary" parameter section which indicates where the coordinate/analog data start, and the coordinate/analog data be in a contiguous block.</p>
+    <p>In order to ensure backward compatibility, the basic parameter names and groups defined for the original C3D specification should always be included in the "primary" parameter section, even if they are duplicated under some other name.</p>
+    <blockquote>
+      <p><em>From a presentation given by Dr. Andrew Danis at the 5th Annual Gait and Clinical Movement Analysis Meeting held at the Helen Hayes Hospital, West Haverstraw, NY in 1989.</em></p>
+    </blockquote>
+  </div>
+  <!-- InstanceEndEditable --> </div>
+
+<!-- InstanceEnd -->
+</body></html>

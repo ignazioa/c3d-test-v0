@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!-- saved from url=(0032)https://www.c3d.org/c3ddocs.html -->
+<!-- saved from url=(0035)https://www.c3d.org/applabview.html -->
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><!-- InstanceBegin template="/templates/andreas07.dwt" codeOutsideHTMLIsLocked="false" --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png?v=jw6lBYGJ3y">
@@ -10,13 +10,13 @@
 <link rel="shortcut icon" href="./favicon.ico?v=jw6lBYGJ3y">
 <meta name="theme-color" content="#ffffff">
 <!-- InstanceBeginEditable name="doctitle" -->
-	<meta name="description" content="The C3D file format specification">
-	<meta name="keywords" content="C3D, motion capture, biomechanics, documentation, pdf, manuals, download, public domain">
-<title>C3D documentation</title>
+<meta name="Description" content="The C3D file format specification and format description">
+<meta name="Keywords" content="C3D, motion capture, biomechanics, force plate, video, analog, emg, mo cap, mo-cap, gaitlab, gaitlab, motion lab, motionlabs">
+<title>C3Dserver with LabView</title>
 <!-- InstanceEndEditable -->
 <meta name="Motion Lab Systems" content="c3d.org">
-<link rel="stylesheet" href="./search.css" type="text/css" media="Screen">
-<link rel="stylesheet" type="text/css" href="./default.css" title="andreas07" media="Screen">
+<link rel="stylesheet" href="./C3Dserver with LabView_files/search.css" type="text/css" media="Screen">
+<link rel="stylesheet" type="text/css" href="./C3Dserver with LabView_files/default.css" title="andreas07" media="Screen">
 <link rel="shortcut icon" ="favicon.ico"="">
 </head>
 <body>
@@ -25,16 +25,15 @@
     <h1>C3D.ORG</h1>
     <h2>The biomechanics standard</h2>
     <!-- InstanceBeginEditable name="menu" -->
-    <div id="menu"> 
-		<a href="./index.html">Home</a> 
-		<a href="./introduction.html">Introduction</a> 
-		<a href="./overview.html">Overview</a>
-		<a href="https://www.c3d.org/HTML/default.htm" target="_blank">C3D online help</a> 
-		<a href="./c3dapps.html">Applications</a> 
-		<a class="active" href="./c3ddocs.html">Documentation</a>
-		<a href="./sampledata.html">Sample C3D files</a>
-		<a href="./about.html">About C3D.ORG</a> 
-	</div>
+    <div id="menu"> <a class="active" href="./index.html">Home</a> 
+    <a href="./introduction.html">Introduction</a> 
+    <a href="./overview.html">Overview</a> 
+    <a href="https://www.c3d.org/HTML/default.htm" target="_blank">C3D online help</a> 
+    <a href="./c3dapps.html">Applications</a> 
+    <a href="./c3ddocs.html">Documentation</a> 
+    <a href="./sampledata.html">Sample C3D files</a>
+    <a href="./about.html">About C3D.ORG</a>
+    </div>
     <!-- InstanceEndEditable -->
     <h3>Updated:</h3>
     <p> <a href="./updates.html">
@@ -97,20 +96,24 @@
   </div>
   <!-- InstanceBeginEditable name="content" -->
   <div id="content">
-    <h2>Documentation</h2>
-    <p>This page provides access to p<span class="style3">ublic domain documents that provide detailed descriptions of the C3D file format. These are essential reading for anyone interested in developing C3D compliant software applications.</span></p>
-    <h4 class="article-title"><a name="C3Dformat" id="C3Dformat"></a><a href="./docs/c3dformat_ug.pdf">C3D User Manual - PDF</a></h4>
-<p>This is a standard PDF version of the C3D technical implementation manual and is identical to the version described above. This PDF file  can be printed and redistributed with any C3D application.</p>
-    <h4><b> <a href="./docs/C3D.pdf">Original C3D specification</a></b></h4>
-    <p>The original ASCII text file that documented the C3D file format as written by Dr. Andrew Dainis for the AMASS software package, released in the mid 1980's.&nbsp; This software description has largely been superceded by the C3D Technical User manual (above) which should be used as a reference for all new applications.</p>
-    <h4><b><a href="./docs/Proposed_C3D_extensions.pdf">Proposed Camera Mask format extension</a></b></h4>
-    <p>A PDF document from Vicon Motion Systems that describes a proposed extension to the C3D standard to encode more than seven camera contribution bits.</p>
-    <h4><b><a href="./docs/c3d-nlr-01.pdf">Proposed New Label and Range format extension</a></b></h4>
-    <p>A PDF document released by the National Institutes of Health in Bethesda, MD, that describes a proposed extension to the C3D format called "New Label and Range" that allows C3D files to store event and event range information.</p>
-    <h4><b><a href="./docs/c3d_scale.xls">Calculating Analog Scale Parameters</a></b></h4>
-    <p>A spreadsheet (Microsoft Excel format) written by Motion Lab Systems that calculates the correct C3D Analog Scale parameters for AMTI (TYPE2 and TYPE-4) force plates, Kistler (TYPE-3) force plates and EMG or any other analog signal source.&nbsp; The spreadsheet supports both 12-bit and 16-bit ADC resolutions.</p>
-    <h4><b><a href="./docs/Scaling%20Issue%20with%20BodyBuilder.pdf">Storing Data as INTEGER or REAL</a></b></h4>
-    <p>A PDF document written by a C3D user that containing a discussion of the issues involved in storing 3D and analog data in C3D files using the INTEGER and REAL formats.</p>
+    <h2>Using the C3DServer with LabVIEW</h2>
+    <p align="center">Dustin A. Bruening, Ph.D. </p>
+    <p align="center">Motion Analysis Laboratory Shriners Hospitals for Children – Erie PA (USA) </p>
+    <p align="center">February 18, 2010</p>
+    <h4>Description and Disclaimer</h4>
+<p>Included is a short documentation on how to access the C3DServer functions within LabVIEW (National Instruments, Austin TX USA), along with a sample VI that reads the 3D points and associated labels for a .C3D file.  This code is offered “as is” to help others in the biomechanics community, and was written solely for the convenience of the author, not being associated with MLS in any way. </p>
+    <h4>Documentation</h4>
+    <p>Incorporating the C3D server into LabVIEW is simple using the ActiveX VIs.  These VIs are found on the Functions Palette under Connectivity –&gt; ActiveX. </p>
+    <ol>
+      <li> Place the “Automation Open” VI on the block diagram. </li>
+      <li> Create a refnum control input.  On the front panel, right click the refnum control and choose Select ActiveX Class -&gt; Browse, then browse to the C3DServer.dll (Generally under C:\WINDOWS\system32). </li>
+      <li> Get an invoke node from the ActiveX palette and wire the refnum into it. Right click on the Method and you will be able to choose from any of the C3D server functions. </li>
+      <li> Wire inputs and outputs as needed. </li>
+      <li> Finish with the “close reference” VI. </li>
+    </ol>
+    <p>Note that a lot of the functions can be run in parallel, without passing the refnum sequentially.  However, error checking may require sequential code. </p>
+    <h4>Example VI</h4>
+    <p>The example VI supplied <a href="https://www.c3d.org/downloads/C3DServer.vi">here</a> reads the 3D marker coordinates and associated labels from a .C3D file into LabVIEW. It was written using LabVIEW 8.2. </p>
   </div>
   <!-- InstanceEndEditable --> </div>
 

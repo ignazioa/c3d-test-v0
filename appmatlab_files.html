@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0040)https://www.c3d.org/appmatlab_files.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><!-- InstanceBegin template="/templates/andreas07.dwt" codeOutsideHTMLIsLocked="false" --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png?v=jw6lBYGJ3y">
+<link rel="icon" type="image/png" href="./favicon-32x32.png?v=jw6lBYGJ3y" sizes="32x32">
+<link rel="icon" type="image/png" href="./favicon-16x16.png?v=jw6lBYGJ3y" sizes="16x16">
+<link rel="manifest" href="./manifest.json?v=jw6lBYGJ3y">
+<link rel="mask-icon" href="./safari-pinned-tab.svg?v=jw6lBYGJ3y" color="#5bbad5">
+<link rel="shortcut icon" href="./favicon.ico?v=jw6lBYGJ3y">
+<meta name="theme-color" content="#ffffff">
+<!-- InstanceBeginEditable name="doctitle" -->
+<meta name="description" content="The C3D file format specification">
+<meta name="keywords" content="C3D, MATLAB, MAT, .m file">
+<title>C3D and MATlab files</title>
+<!-- InstanceEndEditable -->
+<meta name="Motion Lab Systems" content="c3d.org">
+<link rel="stylesheet" href="./C3D and MATlab files_files/search.css" type="text/css" media="Screen">
+<link rel="stylesheet" type="text/css" href="./C3D and MATlab files_files/default.css" title="andreas07" media="Screen">
+<link rel="shortcut icon" ="favicon.ico"="">
+</head>
+<body>
+<div id="wrap">
+  <div id="leftside">
+    <h1>C3D.ORG</h1>
+    <h2>The biomechanics standard</h2>
+    <!-- InstanceBeginEditable name="menu" -->
+    <div id="menu"> <a href="./index.html">Home</a> 
+    <a href="./introduction.html">Introduction</a> 
+    <a href="./overview.html">Overview</a> 
+    <a href="https://www.c3d.org/HTML/default.htm">C3D online</a> 
+    <a href="./c3dapps.html">Applications</a> 
+    <a href="./c3ddocs.html">Documentation</a> 
+    <a href="./sampledata.html">Sample C3D files</a>
+    <a href="./about.html">About C3D.ORG</a> </div>
+    <!-- InstanceEndEditable -->
+    <h3>Updated:</h3>
+    <p> <a href="./updates.html">
+      <!-- #BeginDate format:Sw1 -->7 May, 2018<!-- #EndDate -->
+      </a></p>
+    <p><strong>The  C3D web site is maintained by <a href="http://www.motion-labs.com/" target="_blank">Motion Lab Systems</a> as a resource for the biomechanics community.</strong></p>
+    <p align="left">All of the C3D information on this web site is in the public domain and may be copied and freely distributed with other products. The C3D User Manual  documenting the C3D  format and structure may be copied and supplied with any product that supports C3D.</p>
+    <p align="left"><strong>This web site does not use cookies or collect or store any data from visitors.</strong></p>
+    <p>Original XHTML 1.0 Strict and CSS2 template by <a href="http://andreasviklund.com/" target="_blank">Andreas Viklund</a></p>
+  </div>
+  <div id="extras">
+    <!--Google search engine -->
+    <form action="https://google.com/search" method="get" target="_blank">
+          <div id="headersearch">
+        <div id="headersearchbutton">
+	<p align="center">Search the C3D web site
+		<input type="hidden" name="sitesearch" value="http://c3d.org" />
+		<input type="text" name="q" />
+	</p>
+        </div>
+      </div>
+    </form>
+    <h2> C3D Files supported</h2>
+    <ul>
+      <ul>
+        <li><a href="http://www.anybodytech.com/" target="_blank">AnyBody Technology</a></li>
+        <li><a href="http://www.ar-tracking.com/" target="_blank">ART</a></li>
+        <li><a href="http://www.biogesta.fr/" target="_blank">Biogesta</a></li>
+        <li><a href="http://code.google.com/p/b-tk/" target="_blank">Biomechanical ToolKit</a></li>
+        <li><a href="http://www.bkintechnologies.com/" target="_blank">BKIN Technologies</a></li>
+        <li><a href="http://www.btsbioengineering.com/" target="_blank">BTS Bioengineering </a></li>
+        <li><a href="http://www.c3dserver.com/" target="_blank">C3Dserver</a></li>
+        <li><a href="http://www.c-motion.com/" target="_blank">C-Motion</a></li>
+        <li><a href="http://www.codamotion.com/" target="_blank">Codamotion</a></li>
+        <li><a href="http://www.cometasystems.com/" target="_blank">Cometa Systems</a></li>
+        <li><a href="http://www.di-o-matic.com/" target="_blank">Di-O-Matic</a></li>
+        <li><a href="http://www.innsport.com/" target="_blank">Innovative Sports Training</a></li>
+        <li><a href="http://www.innovision-systems.com/" target="_blank">Innovision Systems</a></li>
+        <li><a href="http://www.kwon3d.com/" target="_blank">Kwon3D</a></li>
+        <li><a href="http://www.motionanalysis.com/" target="_blank">Motion Analysis Corp.</a></li>
+        <li><a href="https://www.motion-labs.com/" target="_blank">Motion Lab Systems</a></li>
+        <li><a href="http://www.nexgenergo.com/" target="_blank">NexGen Ergonomics</a></li>
+        <li><a href="http://www.noraxon.com/" target="_blank">Noraxon</a></li>
+        <li><a href="http://www.ndigital.com/" target="_blank">Northern Digital Inc.</a></li>
+        <li><a href="http://www.optitrack.com/" target="_blank">OptiTrack</a></li>
+        <li><a href="http://www.phasespace.com/" target="_blank">PhaseSpace</a></li>
+        <li><a href="http://www.ptiphoenix.com/" target="_blank">Phoenix Technologies</a></li>
+        <li><a href="http://www.polhemus.com/" target="_blank">Polhemus</a></li>
+        <li><a href="http://www.qualisys.com/" target="_blank">Qualisys</a></li>
+        <li><a href="http://www.motionshadow.com/" target="_blank">Shadow</a></li>
+        <li><a href="http://www.simi.com/" target="_blank">Simi</a></li>
+        <li><a href="http://www.vicon.com/" target="_blank">Vicon Motion Systems</a></li>
+        <li><a href="http://www.virtualsensei.it/" target="_blank">Virtual Sensei</a></li>
+        <li><a href="http://www.xcitex.com/" target="_blank">Xcitex</a></li>
+        <li><a href="http://www.xsens.com/" target="_blank">Xsens</a></li>
+        <li><a href="http://www.zflomotion.com/" target="_blank">Zflomotion</a></li>
+      </ul>
+    </ul>
+    <p align="left"><span class="style3">The websites listed above all offer products that support C3D files. Please <a href="mailto:info@c3d.org">contact us</a> if your</span> product supports the C3D format to request that your website  be added to this list. </p>
+  </div>
+  <!-- InstanceBeginEditable name="content" -->
+  <div id="content">
+    <h2>Brief description of M-files</h2>
+    <p>&nbsp;</p>
+    <table width="98%" border="0" cellspacing="4" cellpadding="0">
+      <tbody><tr>
+        <td align="left" valign="baseline" class="style3"><span class="Section1"><span class="MsoNormal style2"><strong>c3dserver.m</strong></span></span></td>
+        <td align="left" valign="baseline"><p class="style3"><strong>itf = c3dserver()</strong></p></td>
+      </tr>
+      <tr>
+        <td valign="top"><span class="style3"></span></td>
+        <td valign="top"><p class="Section1 style2"><span class="MsoNormal ">Activates C3DServer as a COM (COM.c3dserver_c3d), and returns '<strong>itf</strong>' as a COM object for the server.</span></p></td>
+      </tr>
+      <tr>
+        <td valign="baseline"><span class="Section1"><span class="MsoNormal style2"><strong>openc3d.m</strong></span></span></td>
+        <td valign="baseline"><p class="Section1 style2"><strong><span class="MsoNormal ">openc3d(itf, getoption, fname)</span></strong></p></td>
+      </tr>
+      <tr>
+        <td valign="top"><span class="style3"></span></td>
+        <td valign="top"><p class="style3"><span class="MsoNormal "><span class="MsoNormal">Loads a C3D file into the C3DServer domain.</span></span></p>
+          <p class="style3"><span class="MsoNormal "><span class="MsoNormal"><strong>itf</strong> = variable name used for COM object</span></span></p>
+          <p class="style3"><span class="MsoNormal "><span class="MsoNormal"> <strong>getoption</strong> = 1 for Windows dialog, other than 1 to enter filename</span></span></p>
+          <p class="style3"><span class="MsoNormal "><span class="MsoNormal"><strong>fname</strong> = filename, with or without path and c3d extension </span></span></p>
+          <p class="style3"><span class="MsoNormal "><span class="MsoNormal">Note: <strong>openc3d</strong> will handle 'fname' with or without the '.c3d' extension.&nbsp;'<strong>fname</strong>' must be entered with directory path unless current MATLAB path is where the file is located.</span></span></p></td>
+      </tr>
+      <tr>
+        <td height="16" valign="baseline"><span class="Section1"><span class="MsoNormal style2"><strong>closec3d.m</strong></span></span></td>
+        <td valign="baseline"><p class="Section1 style2"><span class="MsoNormal "><strong>closec3d(itf)</strong></span></p></td>
+      </tr>
+      <tr>
+        <td valign="top"><span class="style3"></span></td>
+        <td valign="top"><p class="Section1 style2"><span class="MsoNormal">Removes C3D file from the C3DServer domain. </span></p>
+          <p class="Section1 style2"><span class="MsoNormal"><strong>itf</strong> = variable name used for COM object</span>.</p></td>
+      </tr>
+      <tr>
+        <td valign="baseline"><span class="Section1"><span class="MsoNormal style2"><strong>savec3d.m</strong></span></span></td>
+        <td valign="baseline"><p class="Section1 style2"><span class="MsoNormal "><strong>savec3d(itf, newfname, filetype)</strong></span></p></td>
+      </tr>
+      <tr>
+        <td valign="top"><span class="style3"></span></td>
+        <td valign="top"><p class="Section1 style2"><span class="MsoNormal">Saves C3D file. </span></p>
+          <p class="Section1 style2"><span class="MsoNormal"><strong>itf</strong> = variable name used for COM object </span></p>
+          <p class="Section1 style2"><span class="MsoNormal"><strong>newfname</strong> = new filename to save, 'a' to save to open file </span></p>
+          <p class="Section1 style2"><span class="MsoNormal"><strong>filetype</strong> = Intel(1), DEC(2), SGI(3), existing type (-1) </span></p>
+          <p class="Section1 style2"><span class="MsoNormal">Note: '<strong>newfname</strong>' and '<strong>filetype</strong>' default to the name of the currently open file and the existing filetype if only '<strong>itf</strong>' is entered as input. <strong>savec3d</strong> will handle '<strong>newfname</strong>' with or without the '.c3d' extension.</span></p>
+          <p class="Section1 style2"><span class="MsoNormal">'<strong>newfname</strong>' can be entered with directory path.</span></p></td>
+      </tr>
+      <tr>
+        <td valign="baseline"><span class="Section1"><span class="MsoNormal style2"><strong>createc3d.m</strong></span></span></td>
+        <td valign="baseline"><p class="Section1 style2"><span class="MsoNormal "><strong>createc3d(itf,name,vfrt,nfram,nmkr,avr,achn,ftype,dtype,pscal)</strong></span></p></td>
+      </tr>
+      <tr>
+        <td valign="top"><span class="style3"></span></td>
+        <td valign="top"><p class="Section1 style2"><span class="MsoNormal ">Creates C3D file with the input parameters.</span></p>
+          <p class="Section1 style2"><span class="MsoNormal "> <strong>itf</strong> = variable name used for COM object </span></p>
+          <p class="Section1 style2"><span class="MsoNormal "><strong>name</strong> = name given to C3D file </span></p>
+          <p class="Section1 style2"><span class="MsoNormal "><strong>vfrt</strong> = video frame rate, must be &gt; 0, default 120 </span></p>
+          <p class="Section1 style2"><span class="MsoNormal "><strong>nfram</strong> = number of frames, default 500 </span></p>
+          <p class="Section1 style2"><span class="MsoNormal "><strong>nmkr</strong> = number of markers, not &lt; 0, default 20 </span></p>
+          <p class="Section1 style2"><span class="MsoNormal "><strong>avr</strong> = analog to video ratio, default 13 </span></p>
+          <p class="Section1 style2"><span class="MsoNormal "><strong>achn</strong> = number of analog channels, not &lt; 0, default 28 </span></p>
+          <p class="Section1 style2"><span class="MsoNormal "><strong>ftype</strong> = Intel(1), DEC(2), SGI(3), default 1 </span></p>
+          <p class="Section1 style2"><span class="MsoNormal "><strong>dtype</strong> = Integer(1), Floating Point(2), default 2 </span></p>
+          <p class="Section1 style2"><span class="MsoNormal "><strong>pscal</strong> = point data scaling factor, must be &gt; 0, default 0.1 </span></p>
+          <p class="Section1 style2"><span class="MsoNormal ">Note: Only requires 2 inputs ('<strong>itf</strong>' and '<strong>name</strong>') if user accepts defaults for other parameters.&nbsp;<strong>createc3d</strong> will handle '<strong>name</strong>' with or without the '.c3d' extension.&nbsp;'<strong>name</strong>' can be entered with directory path.</span></p></td>
+      </tr>
+      <tr>
+        <td valign="baseline"><span class="Section1"><span class="MsoNormal style2"><strong>nframes.m</strong></span></span></td>
+        <td valign="baseline"><p class="Section1 style2"><strong><span class="MsoNormal ">frames = nframes(itf)</span></strong></p></td>
+      </tr>
+      <tr>
+        <td valign="top"><span class="style3"></span></td>
+        <td valign="top"><p class="Section1 style2"><span class="MsoNormal ">Returns integer value of the number of video frames contained in an open C3D file. </span></p>
+          <p class="Section1 style2"><span class="MsoNormal "><strong>itf</strong>&nbsp;= variable name used for COM object </span></p>
+          <p class="Section1 style2"><span class="MsoNormal "><strong>frames</strong> = integer value of number of video frames in c3d file</span>.</p></td>
+      </tr>
+      <tr>
+        <td valign="baseline"><span class="Section1"><span class="MsoNormal style2"><strong>analog2 …</strong></span></span></td>
+        <td valign="baseline"><p class="Section1 style2"><strong><span class="MsoNormal ">truncated = analog2videoframes(itf, signals, index1, index2) </span></strong></p></td>
+      </tr>
+      <tr>
+        <td valign="top"><span class="Section1"><span class="MsoNormal style2"><strong>videoframes.m</strong></span></span></td>
+        <td valign="top"><p class="Section1 style2"><span class="MsoNormal">Truncates input signals to video frame rate. </span></p>
+          <p class="Section1 style2"><span class="MsoNormal"><strong>itf</strong> = variable name used for COM object </span></p>
+          <p class="Section1 style2"><span class="MsoNormal"><strong>signals</strong> = array to be truncated </span></p>
+          <p class="Section1 style2"><span class="MsoNormal"><strong>index1</strong> = video start frame index, all frames if not used as an argument </span></p>
+          <p class="Section1 style2"><span class="MsoNormal"><strong>index2</strong> = video end frame index, all frames if not used as an argument truncated&nbsp;= truncated signals array</span>.</p></td>
+      </tr>
+      <tr>
+        <td valign="baseline"><span class="Section1"><span class="MsoNormal style2"><strong>get3dtarget.m</strong></span></span></td>
+        <td valign="baseline"><p class="style5"><span class="Section1"><span class="MsoNormal">XYZPOS = get3dtarget(itf, signalname, residual, index1, index2)</span></span></p></td>
+      </tr>
+      <tr>
+        <td valign="top"><span class="style3"></span></td>
+        <td valign="top"><p class="Section1 style2"><span class="MsoNormal">Returns nx4 array containing X,Y,Z trajectory data and residual. </span></p>
+          <p class="Section1 style2"><span class="MsoNormal"><strong>itf</strong> = variable name used for COM object </span></p>
+          <p class="Section1 style2"><span class="MsoNormal"><strong>signalname</strong> = string name of desired marker </span></p>
+          <p class="Section1 style2"><span class="MsoNormal"><strong>residual</strong> = Return matrix with point residual in column 4.&nbsp;0 or no 3rd argument = false (returns nx3 with XYZ data only).&nbsp;1 = true (returns nx4 with XYZ and residuals) </span></p>
+          <p class="Section1 style2"><span class="MsoNormal"><strong>index1</strong> = start frame index, all frames if not used as an argument </span></p>
+          <p class="Section1 style2"><span class="MsoNormal"><strong>index2</strong> = end frame index, all frames if not used as an argument </span></p>
+          <p class="Section1 style2"><span class="MsoNormal"><strong>XYZPOS</strong> = nx3/4 matrix with n frames and X, Y, Z, and/or residual as columns.</span></p></td>
+      </tr>
+      <tr>
+        <td valign="baseline"><span class="Section1"><span class="MsoNormal style2"><strong>get3dtargets.m</strong></span></span></td>
+        <td valign="baseline"><p class="Section1 style2"><span class="MsoNormal"><strong>XYZPOS = get3dtargets(itf, residual, index1, index2)</strong></span></p></td>
+      </tr>
+      <tr>
+        <td valign="top"><span class="style3"></span></td>
+        <td valign="top"><p class="Section1 style2"><span class="MsoNormal">Returns structure containing all X,Y,Z trajectory data and residuals if chosen.</span></p>
+          <p class="Section1 style2"><span class="MsoNormal"> <strong>itf</strong> = variable name used for COM object </span></p>
+          <p class="Section1 style2"><span class="MsoNormal"><strong>residual</strong> = Return matrix with point residual in column 4.&nbsp;0 or no 3rd argument = false (returns nx3 with XYZ data only).&nbsp;1 = true (returns nx4 with XYZ and residuals) </span></p>
+          <p class="Section1 style2"><span class="MsoNormal"><strong>index1</strong> = start frame index, all frames if not used as an argument </span></p>
+          <p class="Section1 style2"><span class="MsoNormal"><strong>index2</strong> = end frame index, all frames if not used as an argument </span></p>
+          <p class="Section1 style2"><span class="MsoNormal"><strong>XYZPOS</strong> = structure with target fields, x,y,z and/or residual columns.</span></p></td>
+      </tr>
+      <tr>
+        <td valign="baseline"><span class="Section1"><span class="MsoNormal style2"><strong>getanalog …</strong></span></span></td>
+        <td valign="baseline"><p class="Section1 style2"><span class="MsoNormal"><strong>ACHANNEL = getanalogchannel(itf, signalname, index1, index2)</strong></span></p></td>
+      </tr>
+      <tr>
+        <td valign="top"><span class="Section1"><span class="MsoNormal style2"><strong>channel.m</strong></span></span></td>
+        <td valign="top"><p class="Section1 style2"><span class="MsoNormal">Returns nx1 array containing analog data.&nbsp;The returned analog data is scaled with offsets removed, but is in the force plate coordinate system. </span></p>
+          <p class="Section1 style2"><span class="MsoNormal"><strong>itf</strong> = variable name used for COM object </span></p>
+          <p class="Section1 style2"><span class="MsoNormal"><strong>signalname</strong> = string name of desired signal </span></p>
+          <p class="Section1 style2"><span class="MsoNormal"><strong>index1</strong> = start frame index, all frames if not used as an argument </span></p>
+          <p class="Section1 style2"><span class="MsoNormal"><strong>index2</strong> = end frame index, all frames if not used as an argument </span></p>
+          <p class="Section1 style2"><span class="MsoNormal"><strong>ACHANNEL</strong> = nx1 matrix of analog data</span>.</p></td>
+      </tr>
+      <tr>
+        <td valign="baseline"><span class="Section1"><span class="MsoNormal style2"><strong>getanalog …</strong></span></span></td>
+        <td valign="baseline"><p class="Section1 style2"><span class="MsoNormal"><strong>ACHANNEL = getanalogchannels(itf, index1, index2) </strong></span></p></td>
+      </tr>
+      <tr>
+        <td valign="top"><span class="Section1"><span class="MsoNormal style2"><strong>channels.m</strong></span></span></td>
+        <td valign="top"><p class="Section1 style2"><span class="MsoNormal">Returns structure with nx1 analog data fields.&nbsp;The returned analog data is scaled with offsets removed, but is in the force plate coordinate system. </span></p>
+          <p class="Section1 style2"><span class="MsoNormal">itf = variable name used for COM object </span></p>
+          <p class="Section1 style2"><span class="MsoNormal">index1 = start frame index, all frames if not used as an argument</span></p>
+          <p class="Section1 style2"><span class="MsoNormal"> index2 = end frame index, all frames if not used as an argument ACHANNEL = structure with nx1 matrix of analog data fields (+units)</span>.</p></td>
+      </tr>
+      <tr>
+        <td valign="baseline"><span class="Section1"><span class="MsoNormal style2"><strong>getemg …</strong></span></span></td>
+        <td valign="baseline"><p class="Section1 style2"><span class="MsoNormal"><strong>EMG = getemgchannels(itf,chanstart,chanend,type,index1,index2) </strong></span></p></td>
+      </tr>
+      <tr>
+        <td valign="top"><span class="Section1"><span class="MsoNormal style2"><strong>channels.m</strong></span></span></td>
+        <td valign="top"><p class="style3"><span class="Section1"><span class="MsoNormal">Returns emg data in raw or processed forms. </span></span></p>
+          <p class="style3"><span class="Section1"><span class="MsoNormal">itf = variable name used for COM object </span></span></p>
+          <p class="style3"><span class="Section1"><span class="MsoNormal">chanstart = first emg channel </span></span></p>
+          <p class="style3"><span class="Section1"><span class="MsoNormal">chanend = last emg channel type = 0 or no input for raw, 1 for FWR, 2 for LE (6Hz dual-pass) </span></span></p>
+          <p class="style3"><span class="Section1"><span class="MsoNormal">index1 = start frame index, all frames if not used as an argument </span></span></p>
+          <p class="style3"><span class="Section1"><span class="MsoNormal">index2 = end frame index, all frames if not used as an argument EMG = stucture with channel fields. </span></span></p></td>
+      </tr>
+    </tbody></table>
+    <p>&nbsp;</p>
+  </div>
+  <!-- InstanceEndEditable --> </div>
+
+<!-- InstanceEnd -->
+</body></html>

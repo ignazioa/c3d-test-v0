@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0034)https://www.c3d.org/appmatlab.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><!-- InstanceBegin template="/templates/andreas07.dwt" codeOutsideHTMLIsLocked="false" --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.c3d.org/apple-touch-icon.png?v=jw6lBYGJ3y">
+<link rel="icon" type="image/png" href="https://www.c3d.org/favicon-32x32.png?v=jw6lBYGJ3y" sizes="32x32">
+<link rel="icon" type="image/png" href="https://www.c3d.org/favicon-16x16.png?v=jw6lBYGJ3y" sizes="16x16">
+<link rel="manifest" href="https://www.c3d.org/manifest.json?v=jw6lBYGJ3y">
+<link rel="mask-icon" href="./safari-pinned-tab.svg?v=jw6lBYGJ3y" color="#5bbad5">
+<link rel="shortcut icon" href="./favicon.ico?v=jw6lBYGJ3y">
+<meta name="theme-color" content="#ffffff">
+<!-- InstanceBeginEditable name="doctitle" -->
+<meta name="description" content="The C3D file format specification">
+<meta name="keywords" content="C3D, MATLAB, using MATLAB">
+<title>C3D MATlab access</title>
+<!-- InstanceEndEditable -->
+<meta name="Motion Lab Systems" content="c3d.org">
+<link rel="stylesheet" href="./C3D MATlab access_files/search.css" type="text/css" media="Screen">
+<link rel="stylesheet" type="text/css" href="./C3D MATlab access_files/default.css" title="andreas07" media="Screen">
+<link rel="shortcut icon" ="favicon.ico"="">
+</head>
+<body>
+<div id="wrap">
+  <div id="leftside">
+    <h1>C3D.ORG</h1>
+    <h2>The biomechanics standard</h2>
+    <!-- InstanceBeginEditable name="menu" -->
+    <div id="menu"> <a href="./index.html">Home</a> 
+    <a href="./introduction.html">Introduction</a> 
+    <a href="./overview.html">Overview</a> 
+    <a href="https://www.c3d.org/HTML/default.htm">C3D online help</a> 
+    <a href="./c3dapps.html">Applications</a> 
+    <a href="./c3ddocs.html">Documentation</a> 
+    <a href="./sampledata.html">Sample C3D files</a>
+    <a href="./about.html">About C3D.ORG</a> 
+    </div>
+    <!-- InstanceEndEditable -->
+    <h3>Updated:</h3>
+    <p> <a href="./updates.html">
+      <!-- #BeginDate format:Sw1 -->7 May, 2018<!-- #EndDate -->
+      </a></p>
+    <p><strong>The  C3D web site is maintained by <a href="http://www.motion-labs.com/" target="_blank">Motion Lab Systems</a> as a resource for the biomechanics community.</strong></p>
+    <p align="left">All of the C3D information on this web site is in the public domain and may be copied and freely distributed with other products. The C3D User Manual  documenting the C3D  format and structure may be copied and supplied with any product that supports C3D.</p>
+    <p align="left"><strong>This web site does not use cookies or collect or store any data from visitors.</strong></p>
+    <p>Original XHTML 1.0 Strict and CSS2 template by <a href="http://andreasviklund.com/" target="_blank">Andreas Viklund</a></p>
+  </div>
+  <div id="extras">
+    <!--Google search engine -->
+    <form action="https://google.com/search" method="get" target="_blank">
+          <div id="headersearch">
+        <div id="headersearchbutton">
+	<p align="center">Search the C3D web site
+		<input type="hidden" name="sitesearch" value="http://c3d.org" />
+		<input type="text" name="q" />
+	</p>
+        </div>
+      </div>
+    </form>
+    <h2> C3D Files supported</h2>
+    <ul>
+      <ul>
+        <li><a href="http://www.anybodytech.com/" target="_blank">AnyBody Technology</a></li>
+        <li><a href="http://www.ar-tracking.com/" target="_blank">ART</a></li>
+        <li><a href="http://www.biogesta.fr/" target="_blank">Biogesta</a></li>
+        <li><a href="http://code.google.com/p/b-tk/" target="_blank">Biomechanical ToolKit</a></li>
+        <li><a href="http://www.bkintechnologies.com/" target="_blank">BKIN Technologies</a></li>
+        <li><a href="http://www.btsbioengineering.com/" target="_blank">BTS Bioengineering </a></li>
+        <li><a href="http://www.c3dserver.com/" target="_blank">C3Dserver</a></li>
+        <li><a href="http://www.c-motion.com/" target="_blank">C-Motion</a></li>
+        <li><a href="http://www.codamotion.com/" target="_blank">Codamotion</a></li>
+        <li><a href="http://www.cometasystems.com/" target="_blank">Cometa Systems</a></li>
+        <li><a href="http://www.di-o-matic.com/" target="_blank">Di-O-Matic</a></li>
+        <li><a href="http://www.innsport.com/" target="_blank">Innovative Sports Training</a></li>
+        <li><a href="http://www.innovision-systems.com/" target="_blank">Innovision Systems</a></li>
+        <li><a href="http://www.kwon3d.com/" target="_blank">Kwon3D</a></li>
+        <li><a href="http://www.motionanalysis.com/" target="_blank">Motion Analysis Corp.</a></li>
+        <li><a href="https://www.motion-labs.com/" target="_blank">Motion Lab Systems</a></li>
+        <li><a href="http://www.nexgenergo.com/" target="_blank">NexGen Ergonomics</a></li>
+        <li><a href="http://www.noraxon.com/" target="_blank">Noraxon</a></li>
+        <li><a href="http://www.ndigital.com/" target="_blank">Northern Digital Inc.</a></li>
+        <li><a href="http://www.optitrack.com/" target="_blank">OptiTrack</a></li>
+        <li><a href="http://www.phasespace.com/" target="_blank">PhaseSpace</a></li>
+        <li><a href="http://www.ptiphoenix.com/" target="_blank">Phoenix Technologies</a></li>
+        <li><a href="http://www.polhemus.com/" target="_blank">Polhemus</a></li>
+        <li><a href="http://www.qualisys.com/" target="_blank">Qualisys</a></li>
+        <li><a href="http://www.motionshadow.com/" target="_blank">Shadow</a></li>
+        <li><a href="http://www.simi.com/" target="_blank">Simi</a></li>
+        <li><a href="http://www.vicon.com/" target="_blank">Vicon Motion Systems</a></li>
+        <li><a href="http://www.virtualsensei.it/" target="_blank">Virtual Sensei</a></li>
+        <li><a href="http://www.xcitex.com/" target="_blank">Xcitex</a></li>
+        <li><a href="http://www.xsens.com/" target="_blank">Xsens</a></li>
+        <li><a href="http://www.zflomotion.com/" target="_blank">Zflomotion</a></li>
+      </ul>
+    </ul>
+    <p align="left"><span class="style3">The websites listed above all offer products that support C3D files. Please <a href="mailto:info@c3d.org">contact us</a> if your</span> product supports the C3D format to request that your website  be added to this list. </p>
+  </div>
+  <!-- InstanceBeginEditable name="content" -->
+  <div id="content">
+    <h2><span class="Section1">MATLAB Toolbox For C3Dserver – Version 2
+      <o:p></o:p>
+      </span></h2>
+    <p align="center" class="MsoNormal" style="text-align:center; font-style: italic;"><span class="Section1"><a href="mailto:matthewwalker_1@hotmail.com?subject=Using%20MATLAB%20Toolbox%20for%20C3DServer%20-%20version%202">Matthew R. Walker</a>, <a href="mailto:Michael_Rainbow@brown.edu?subject=Using%20MATLAB%20Toolbox%20for%20C3DServer%20-%20version%202">Michael J. Rainbow</a></span></p>
+    <p align="center" class="MsoNormal" style="text-align:center"><span class="Section1">Motion Analysis Laboratory Shriners Hospitals for Children – Erie PA (USA)</span></p>
+    <p align="center" class="MsoNormal" style="text-align:center"><span class="Section1"><strong> Version 2: April 21, 2006</strong></span></p>
+    <h4 class="MsoNormal"><span class="Section1">Description
+      <o:p></o:p>
+      </span></h4>
+    <p class="MsoNormal"><span class="Section1">The C3D directory contains MATLAB functions used to activate and use Motion Lab Systems (MLS) C3Dserver as a COM object in MATLAB.&nbsp;This allows access to all of the functions within the C3Dserver.&nbsp;Some example functions are provided -  a <a href="./appmatlab_files.html">brief description of the m-files is available here</a>.
+      <o:p></o:p>
+      </span></p>
+    <p><em><span class="style5">Version 2 Additions:</span> </em></p>
+    <span class="Section1"> </span>
+    <ul>
+      <li class="style3"><span class="Section1">New functions available to provide examples of C3Dserver capabilities. </span></li>
+      <li class="style3"><span class="Section1">Notes have been added to this documentation on PC requirements and a syntax change for use in MATLAB that was not mentioned in Version 1 of this toolbox.</span></li>
+    </ul>
+    <span class="Section1"></span>
+    <h4 class="MsoNormal"><span class="Section1">Disclaimer of Warranties &amp; Indemnity
+      <o:p></o:p>
+      </span></h4>
+    <p class="MsoNormal"><span class="Section1">These functions are offered to the biomechanics community free of charge and “as is” to increase the availability of a commonly used file format (<strong>*.c3d</strong>) in MATLAB.&nbsp;The use of these functions is at your own risk.&nbsp;Development of these functions was solely for the convenience of the authors, and was not in association with MLS in any way.</span></p>
+    <p class="MsoNormal"> <span class="Section1">
+      <!--[if !supportEmptyParas]-->
+      Shriners Hospitals for Children, the Motion Analysis Laboratory at Shriners Hospitals for Children - Erie PA (USA), and/or the authors make no warranty, express or implied, including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose with respect to any research, information, data, patent, trademark, software, non-public or other information, or tangible research property which may be provided to User hereunder and hereby disclaims the same.</span></p>
+    <h4 class="MsoNormal"><span class="Section1">Usage       <o:p></o:p>       </span></h4>
+    <p class="Section1"><em>Request from Authors:</em> Please leave the authors names intact on the files.&nbsp;The authors also request acknowledgement if the use of these functions was found helpful for publications.&nbsp;If you find errors, have questions/ comments, or would like to provide or request additions to these M-files, please contact either <a href="mailto:matthewwalker_1@hotmail.com?subject=Using%20MATLAB%20Toolbox%20for%20C3DServer%20-%20version%202">Matthew Walker</a> (matthewwalker_1@hotmail.com) <strong>OR</strong> <a href="mailto:Michael_Rainbow@brown.edu?subject=Using%20MATLAB%20Toolbox%20for%20C3DServer%20-%20version%202">Michael Rainbow</a> (Michael_Rainbow@brown.edu).
+      <!--[endif]-->
+      <o:p></o:p>
+    </p>
+    <span class="Section1"></span>
+    <p class="MsoNormal"><span class="Section1"><i>Requirements:
+      <o:p> </o:p>
+      </i>You must have both MATLAB 7.0 (or newer) and MLS C3Dserver (registered copy) installed.&nbsp;These M-files were created and tested with MATLAB 7.0 (R14) and MLS C3Dserver (v.129.3), operating on Windows XP Pro.</span></p>
+    <p class="MsoNormal style3"><span class="Section1"><em>Please Note: </em></span></p>
+    <ul>
+      <li><span class="MsoNormal style2">Routines have not been tested with other versions of MATLAB.&nbsp;Problems resulting from use of this toolbox with older MATLAB versions are not supported by the authors.</span></li>
+    </ul>
+    <ol>
+      <li><span class="Section1"> Download the <b><u><a href="https://www.c3d.org/downloads/c3dserver_matlab.zip">C3Dserver_matlab.zip</a></u></b> file  and add the directory to your MATLAB path.</span></li>
+      <li><span class="Section1"> Choose a variable name (for example: '<b>test</b>'), and type at the MATLAB prompt:</span></li>
+    </ol>
+    <p class="MsoNormal" style="margin-left:.5in"><span class="Section1">&gt;&gt; <b>test = c3dserver</b></span></p>
+    <ol style="margin-top:0in" start="3" type="1">
+      <li class="MsoNormal" style="mso-list:l0 level1 lfo3; tab-stops:list .5in; font-size: small;"><span class="Section1">A COM object variable '<b>test</b>' is now loaded.&nbsp; Once loaded, the C3DServer functions are considered 'methods' of the class <b>COM.C3DServer_C3D</b>.&nbsp; The status and version of C3DServer you are using will be displayed (access is limited in evaluation mode).</span></li>
+      <li class="MsoNormal" style="mso-list:l0 level1 lfo3; tab-stops:list .5in; font-size: small;"><span class="Section1">There are several MATLAB functions that will show you the 'methods' (ie. functions) available through C3DServer.&nbsp; For example, type any of the following:</span></li>
+    </ol>
+    <p class="MsoNormal" style="margin-left:.5in"><span class="Section1">&gt;&gt; <b>methods(test) </b>; <b>invoke(test)</b> ; <b>methodsview(test)</b></span></p>
+    <ol style="margin-top:0in" start="5" type="1">
+      <li class="MsoNormal" style="mso-list:l0 level1 lfo3; tab-stops:list .5in; font-size: small;"><span class="Section1">The M-files can now be used as typical MATLAB functions to open, save, create, or close a *.c3d file.&nbsp; For help, type: <b>help 'function name'</b>.&nbsp;&nbsp; To open a file, type:</span></li>
+    </ol>
+    <p class="MsoNormal" style="margin-left:.5in"><span class="Section1">&gt;&gt; <b>openc3d(test)
+      <o:p></o:p>
+      </b></span></p>
+    <p class="MsoNormal" style="margin-left:.5in; font-size: small;"><span class="Section1">Also notice additional arguments for increased flexibility in some of the functions.</span></p>
+    <ol style="margin-top:0in" start="6" type="1">
+      <li class="MsoNormal" style="mso-list:l0 level1 lfo3; tab-stops:list .5in; font-size: small;"><span class="Section1">With access to all of the functions in C3Dserver, users can now write additional MATLAB functions (similar to those M-files in the toolbox) to perform operations on the data in C3D files.
+        <o:p></o:p>
+        </span></li>
+    </ol>
+    <p><strong><em>Please Note:</em> </strong></p>
+    <ul>
+      <li class="style3">When using C3Dserver functions, please refer to the most recent C3Dserver documentation.&nbsp; </li>
+      <li class="style3">The BYTE byScaled arguments for functions in the C3Dserver manual must be input into MATLAB code as a string (ie. in single-quotations).&nbsp;As an example, the final argument in the following code needs to be in single quotation marks:  &gt;&gt; xyzpos = test.GetPointData(0, 0, test.GetVideoFrame(0), ‘1’); </li>
+      <li class="style3">No other syntax differences have been found.</li>
+    </ul>
+    <h5 class="MsoNormal"><span class="Section1">Acknowledgements
+      <o:p></o:p>
+      </span></h5>
+    <p class="MsoNormal"><span class="Section1">The authors would like to thank Frank L. Buczek, Jr., Ph.D., Director of the Motion Analysis Laboratory at Shriners Hospitals for Children – Erie PA (USA), for his support and suggestions during this process</span></p>
+  </div>
+  <!-- InstanceEndEditable --> </div>
+
+<!-- InstanceEnd -->
+</body></html>
